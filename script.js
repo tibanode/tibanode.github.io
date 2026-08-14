@@ -24,9 +24,39 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+let scrollFrame;
+const updateScrollState = () => {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
+  header?.classList.toggle('is-scrolled', window.scrollY > 12);
+  header?.style.setProperty('--scroll-progress', progress);
+  scrollFrame = undefined;
+};
+
 window.addEventListener('scroll', () => {
-  header.classList.toggle('is-scrolled', window.scrollY > 12);
+  if (!scrollFrame) scrollFrame = requestAnimationFrame(updateScrollState);
 }, { passive: true });
+updateScrollState();
+
+const sectionLinks = [...document.querySelectorAll('.site-nav a[href^="#"]')];
+const observedSections = sectionLinks
+  .map((link) => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
+
+if ('IntersectionObserver' in window && observedSections.length) {
+  const sectionObserver = new IntersectionObserver((entries) => {
+    const visible = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    sectionLinks.forEach((link) => {
+      const current = link.getAttribute('href') === `#${visible.target.id}`;
+      if (current) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  }, { rootMargin: '-24% 0px -62% 0px', threshold: [0, 0.1, 0.25] });
+  observedSections.forEach((section) => sectionObserver.observe(section));
+}
 
 const contactForm = document.querySelector('[data-contact-form]');
 
