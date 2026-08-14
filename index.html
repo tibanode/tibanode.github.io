@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tibanode — Medical AI Infrastructure for Hospitals</title>
+  <meta name="description" content="Hardware-aware medical AI infrastructure for hospitals, built in Tanzania.">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta property="og:title" content="tibanode — Medical AI Infrastructure for Hospitals">
+  <meta property="og:description" content="Hardware-aware medical AI infrastructure for hospitals, built in Tanzania.">
+  <meta property="og:site_name" content="tibanode">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="tibanode — Medical AI Infrastructure for Hospitals">
+  <meta name="twitter:description" content="Hardware-aware medical AI infrastructure for hospitals, built in Tanzania.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="tibanode home">
+        <img src="assets/tibanode-logo.png" width="1200" height="201" alt="tibanode" decoding="async">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span>Menu</span><span class="menu-glyph" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#vision">Vision</a>
+        <a href="#research">Research</a>
+        <a href="#community">Community</a>
+        <a href="#publications">Publications</a>
+        <a href="#blog">Blog</a>
+        <a href="#getting-started">Getting started</a>
+        <a class="nav-cta" href="partner.html">Partner with us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Medical AI infrastructure · Tanzania</p>
+        <h1 id="hero-title">Medical AI infrastructure for hospitals.</h1>
+        <p class="hero-intro">tibanode is a hardware-aware medical AI infrastructure project designed to run AI within hospital-owned infrastructure while making hardware capability, model identity and validation state visible.</p>
+        <div class="actions">
+          <a class="action action-primary" href="#system">Explore the system <span aria-hidden="true">↓</span></a>
+          <a class="action" href="https://github.com/tibanode">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-system" aria-hidden="true">
+        <div class="diagram-meta"><span>Local-first infrastructure</span><span>TN / 01</span></div>
+        <div class="flow-stack">
+          <span>Clinician</span><i></i>
+          <strong>tibanode</strong><i></i>
+          <span>Local inference</span><i></i>
+          <span>Hospital-owned hardware</span>
+        </div>
+        <div class="diagram-foot"><span>Runtime location</span><span>On premises</span></div>
+      </div>
+    </section>
+
+    <section class="section context" id="vision" aria-labelledby="context-title">
+      <div class="section-marker">§ 01 <span>Vision</span></div>
+      <div class="section-body split-copy">
+        <h2 id="context-title">Medical AI has to operate within real infrastructure.</h2>
+        <div class="prose">
+          <p>Hospital computing hardware varies. Reliable cloud access cannot always be assumed, and medical information requires careful handling.</p>
+          <p>An AI system should expose what the available hardware can actually support—not hide infrastructure constraints.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section system-section" id="system" aria-labelledby="system-title">
+      <div class="section-marker">§ 02 <span>System</span></div>
+      <div class="section-body">
+        <h2 id="system-title">One local control layer.</h2>
+        <div class="architecture" role="img" aria-label="Architecture flow from clinician and local interface through tibanode, hardware probe, model registry and validation status, to local inference on hospital-owned hardware">
+          <div class="arch-node arch-wide">Clinician / local interface</div>
+          <div class="arch-line" aria-hidden="true"></div>
+          <div class="arch-node arch-core">tibanode <small>Control layer</small></div>
+          <div class="arch-branches" aria-hidden="true"></div>
+          <div class="arch-modules">
+            <div class="arch-node"><small>01</small>Hardware probe</div>
+            <div class="arch-node"><small>02</small>Model registry</div>
+            <div class="arch-node"><small>03</small>Validation status</div>
+          </div>
+          <div class="arch-join" aria-hidden="true"></div>
+          <div class="arch-node arch-wide">Local inference</div>
+          <div class="arch-line" aria-hidden="true"></div>
+          <div class="arch-node arch-wide">Hospital-owned hardware</div>
+        </div>
+        <div class="system-qualities">
+          <article><span>01</span><h3>Local</h3><p>Designed so inference can run within hospital-owned infrastructure.</p></article>
+          <article><span>02</span><h3>Aware</h3><p>Hardware capability is treated as a first-class system constraint.</p></article>
+          <article><span>03</span><h3>Governed</h3><p>Model identity, compatibility and validation state are made visible.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section foundation" id="research" aria-labelledby="foundation-title">
+      <div class="section-marker">§ 03 <span>Research</span></div>
+      <div class="section-body quiet-record">
+        <p class="eyebrow">Research</p>
+        <h2 id="foundation-title">Medical AI infrastructure, examined from the runtime upward.</h2>
+        <p>Research at tibanode is centered on local inference, hardware compatibility, model identity and clinically governed deployment.</p>
+      </div>
+    </section>
+
+    <section class="section community" id="community" aria-labelledby="community-title">
+      <div class="section-marker">§ 04 <span>Community</span></div>
+      <div class="section-body community-body">
+        <p class="eyebrow">Open technical exchange</p>
+        <h2 id="community-title">Infrastructure improves through shared scrutiny.</h2>
+        <div class="community-grid">
+          <p class="community-lead">tibanode welcomes careful exchange with clinicians, hospital technology teams, researchers and engineers working on local medical AI infrastructure.</p>
+          <ul class="community-list">
+            <li><span>01</span>Clinical workflow perspective</li>
+            <li><span>02</span>Hospital hardware constraints</li>
+            <li><span>03</span>Model evaluation and validation</li>
+            <li><span>04</span>Rust inference engineering</li>
+          </ul>
+        </div>
+        <a class="text-link" href="partner.html">Start a conversation <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="section publications" id="publications" aria-labelledby="publications-title">
+      <div class="section-marker">§ 05 <span>Publications</span></div>
+      <div class="section-body quiet-record">
+        <p class="eyebrow">Publications</p>
+        <h2 id="publications-title">Public technical record.</h2>
+        <p>A record of tibanode research publications and technical reports.</p>
+      </div>
+    </section>
+
+    <section class="section getting-started" id="getting-started" aria-labelledby="getting-started-title">
+      <div class="section-marker">§ 06 <span>Getting started</span></div>
+      <div class="section-body">
+        <p class="eyebrow">Local runtime</p>
+        <h2 id="getting-started-title">Getting started with tibanode. Run medical models locally.</h2>
+        <p class="getting-started-intro">tibanode is designed to make the path from hospital hardware to compatible local inference explicit.</p>
+        <ol class="start-flow">
+          <li><span>01</span><strong>Inspect hardware</strong><p>Identify the compute, memory and runtime capabilities of the host machine.</p></li>
+          <li><span>02</span><strong>Verify compatibility</strong><p>Make model identity, hardware fit and validation state visible before inference.</p></li>
+          <li><span>03</span><strong>Run locally</strong><p>Serve inference within hospital-owned infrastructure through a local interface.</p></li>
+        </ol>
+        <a class="text-link" href="https://github.com/tibanode">View source on GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section blog" id="blog" aria-labelledby="blog-title">
+      <div class="section-marker">§ 07 <span>Blog</span></div>
+      <div class="section-body blog-body">
+        <div>
+          <p class="eyebrow">Development notes</p>
+          <h2 id="blog-title">Notes from the infrastructure layer.</h2>
+        </div>
+        <div class="blog-copy">
+          <p>Technical decisions, validation methods and implementation findings will be documented as the work becomes ready for public scrutiny.</p>
+          <p>For the current source-level record, follow development on GitHub.</p>
+          <a class="text-link" href="https://github.com/tibanode">View tibanode on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section principles" id="principles" aria-labelledby="principles-title">
+      <div class="section-marker">§ 08 <span>Principles</span></div>
+      <div class="section-body">
+        <h2 id="principles-title">Principles.</h2>
+        <ol class="principle-list">
+          <li><span class="principle-number">01</span><h3>Local first</h3><p>Patient inference should not require a remote inference service.</p></li>
+          <li><span class="principle-number">02</span><h3>Hardware is real</h3><p>The system should expose what a machine can and cannot reasonably run.</p></li>
+          <li><span class="principle-number">03</span><h3>Trust is visible</h3><p>Model identity, compatibility and validation state should be explicit.</p></li>
+          <li><span class="principle-number">04</span><h3>Hospitals first</h3><p>The system is designed around hospital infrastructure and clinical environments.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section origin" id="origin" aria-labelledby="origin-title">
+      <div class="section-marker">§ 09 <span>Origin</span></div>
+      <div class="section-body">
+        <p class="origin-location">Origin / Tanzania</p>
+        <h2 id="origin-title">Built in Tanzania.</h2>
+        <p>tibanode is being developed in Tanzania around the realities of hospital infrastructure, constrained compute, medical data governance and local technical capacity.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <img src="assets/tibanode-logo.png" width="1200" height="201" alt="tibanode">
+      <p>Medical AI infrastructure for hospitals.</p>
+    </div>
+    <div class="footer-bottom">
+      <span>Tanzania</span>
+      <nav aria-label="Footer navigation"><a href="https://github.com/tibanode">GitHub</a><a href="https://x.com/tibanode">X</a><a href="https://instagram.com/tibanode">Instagram</a></nav>
+    </div>
+  </footer>
+</body>
+</html>
